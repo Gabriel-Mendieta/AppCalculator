@@ -6,17 +6,18 @@ import ThemeText from '@/components/ThemeText'
 const CalculatorApp = () => {
     return (
         <View style={globalStyles.calculatorContainer}>
-            <Text
-                style={globalStyles.mainResult}
-                numberOfLines={1}
-                adjustsFontSizeToFit
-            >50 x 500000000</Text>
 
-            <Text
-                style={globalStyles.subResult}
-            >2500</Text>
+            {/* Resultados */}
+            <View style={{ paddingHorizontal: 30, paddingBottom: 20 }}>
+                <ThemeText variant='h1'>50 x 5000</ThemeText>
+                <ThemeText variant='h2'>2500</ThemeText>
+            </View>
 
-            <ThemeText />
+            {/* Filas de Botones */}
+
+            <View>
+
+            </View>
         </View>
     )
 }
